@@ -35,15 +35,16 @@ The report uses chart selections, filters and tooltips to connect the portfolio 
 
 ### Inventory Change
 
-![Inventory Change dashboard showing opening and closing values, net change by movement status, and the largest product increases and decreases.](images/inventory-change.png)
+![Inventory Change dashboard](inventory-change.png)
 
 ### Review Priorities
 
-![Review Priorities dashboard showing stock with no issues, product movement, ABC classes, and high-value products for review.](images/review-priorities.png)
+![Review Priorities dashboard](review-priorities.png)
+
 
 ### Concentration & Issues
 
-![Concentration and Issues dashboard showing cumulative stock-value concentration, issued value by ending stock position, and the ten largest issued values.](images/concentration-and-issues.png)
+![Concentration and Issues dashboard](concentration-and-issues.png)
 
 ## Key results
 
