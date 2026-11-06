@@ -8,7 +8,7 @@ A three-page Power BI report for reviewing inventory value, identifying products
 
 **Main finding:** Closing inventory value increased by **293,621,312 VND (14.6%)** during the period. At period end, **721,243,300 VND (31.4%)** was held in 75 products with no recorded issues. These products form a review list; the data does not establish that they are obsolete or unnecessary.
 
-[Open or download the Power BI report](Inventory%20Dashboard%20Revised.pbix)
+[Open or download the Power BI report](Inventory%20Dashboard.pbix)
 
 ## Business problem
 
