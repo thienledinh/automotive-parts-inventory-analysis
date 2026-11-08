@@ -1,0 +1,1621 @@
+{
+  "source_files": {
+    "README.md": {
+      "sha256": "2c2bf23cfe00d74f8b125dafcd11274a7f63be4b308d9596d1120eff8dcca459",
+      "bytes": 6591
+    },
+    "project_sql_proof_terminal.sql": {
+      "sha256": "705fa565651935c771f48dcc0d2397f22d4950f3de601a5ab5322e2b335528f3",
+      "bytes": 23216
+    },
+    "recovered_chat_queries.md": {
+      "sha256": "df22e02ca7c29948908c3e772ea32e6d10cecc05714d37a1b0248f2245694ef8",
+      "bytes": 97900
+    },
+    "sql_evidence_2026-11-08.zip": {
+      "sha256": "e615b960dd41655632ca7032b5a0b41adaf874119c356e029ec9e2edd75d680b",
+      "bytes": 34910
+    }
+  },
+  "definitions": [
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "analytics;",
+      "dump_line": 29,
+      "statement_sha256_lf_utf8": "9bb13b06f16b09b6d32e619897370023b4b49e50b95d6f7ffe8d244cd46db22b",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "core;",
+      "dump_line": 37,
+      "statement_sha256_lf_utf8": "f60177c9fdcb5eaeb4feac94a9ecb41ee40c874479087865d80a698f290fc711",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "staging;",
+      "dump_line": 45,
+      "statement_sha256_lf_utf8": "b0a1edc8c03a211eafc47f984886908c104ea042b836ba116691a0663f922062",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "public.pg_trgm",
+      "dump_line": 53,
+      "statement_sha256_lf_utf8": "491ff1f6bf0e584211acb89acfd8e66c24410d90ffe830258c9158db70ff613c",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "staging.catalogue_prices_raw",
+      "dump_line": 74,
+      "statement_sha256_lf_utf8": "aa43209c174d13c210feb05c7e2f440105c8dad067c1fb99dcd37d66fb953502",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/03_catalogue_views.sql",
+      "object": "core.catalogue_prices_clean",
+      "dump_line": 92,
+      "statement_sha256_lf_utf8": "835a997c347d1a00b853590380c113621fd4c86d818752a6222c660581468899",
+      "related_chat_blocks": [
+        "Q091"
+      ]
+    },
+    {
+      "file": "definitions/03_catalogue_views.sql",
+      "object": "analytics.catalogue_price_comparison_exact",
+      "dump_line": 120,
+      "statement_sha256_lf_utf8": "975df662229b0f7a599d9b7aadeac724ff5c3747e21a512619bf578abe7a208d",
+      "related_chat_blocks": [
+        "Q095"
+      ]
+    },
+    {
+      "file": "definitions/03_catalogue_views.sql",
+      "object": "analytics.catalogue_price_change_analysis",
+      "dump_line": 190,
+      "statement_sha256_lf_utf8": "4318421cce7b072ae64427fbb70ad53e90148725537d28992248918d457ed5a4",
+      "related_chat_blocks": [
+        "Q103"
+      ]
+    },
+    {
+      "file": "definitions/03_catalogue_views.sql",
+      "object": "analytics.catalogue_kpis",
+      "dump_line": 217,
+      "statement_sha256_lf_utf8": "54356bc7c6648684c7bbe507a3dd6c8a7e951c99dcf430efcbf1a7097703326b",
+      "related_chat_blocks": [
+        "Q106"
+      ]
+    },
+    {
+      "file": "definitions/03_catalogue_views.sql",
+      "object": "analytics.catalogue_unmatched_review",
+      "dump_line": 234,
+      "statement_sha256_lf_utf8": "5d485a34ae2a1c60ea0cd643e813a2e9dcd3d7011544f675fff16543da5ae9cb",
+      "related_chat_blocks": [
+        "Q097"
+      ]
+    },
+    {
+      "file": "definitions/03_catalogue_views.sql",
+      "object": "analytics.catalogue_match_candidates",
+      "dump_line": 269,
+      "statement_sha256_lf_utf8": "68dff9d2f06026a8f592201cfab113e57c39ab8860c4bf8a2379df31f2a31ef2",
+      "related_chat_blocks": [
+        "Q101"
+      ]
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "core.inventory_period",
+      "dump_line": 327,
+      "statement_sha256_lf_utf8": "7c34ae35252d7915684e96dbc97feb1570560260d271fb74f14b19802ea159b5",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "core.products",
+      "dump_line": 355,
+      "statement_sha256_lf_utf8": "1b81104a92e51dfa5b765b1be6257026dd728c4682f364d05f9310a607235f21",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/02_inventory_views.sql",
+      "object": "analytics.inventory_status",
+      "dump_line": 368,
+      "statement_sha256_lf_utf8": "948ecd55602f6e3b704a3b8bc44c1cb9b8c93ba8e6b84b22851ca23bbe2dff92",
+      "related_chat_blocks": [
+        "Q051"
+      ]
+    },
+    {
+      "file": "definitions/02_inventory_views.sql",
+      "object": "analytics.inventory_abc",
+      "dump_line": 402,
+      "statement_sha256_lf_utf8": "8ea25a15ea788f060d4df9f542165ddb31b39f7faf5f65d0a7e6ea8297051cd8",
+      "related_chat_blocks": [
+        "Q066"
+      ]
+    },
+    {
+      "file": "definitions/02_inventory_views.sql",
+      "object": "analytics.inventory_kpis",
+      "dump_line": 443,
+      "statement_sha256_lf_utf8": "6c882a21c3c4f4c2821a1f70655307c0d41bccd1f384e9ccecc0cbae310bc1dc",
+      "related_chat_blocks": [
+        "Q054"
+      ]
+    },
+    {
+      "file": "definitions/02_inventory_views.sql",
+      "object": "analytics.no_movement_review",
+      "dump_line": 461,
+      "statement_sha256_lf_utf8": "2e913ee0dc423492072e10e047f0cd092c10adf1e8122f997d83cc92a521da79",
+      "related_chat_blocks": [
+        "Q056",
+        "Q064"
+      ]
+    },
+    {
+      "file": "definitions/02_inventory_views.sql",
+      "object": "analytics.no_movement_reviews",
+      "dump_line": 481,
+      "statement_sha256_lf_utf8": "b1898827a7d9deda1cc6f5d41dd62a64d8f8426fa1f9d54714e76e37a2a53bd0",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/02_inventory_views.sql",
+      "object": "analytics.zero_closing_review",
+      "dump_line": 501,
+      "statement_sha256_lf_utf8": "6b54aae7d1b004a3302391bc617261722626d0ec7c477b6c40922b2eddf7f262",
+      "related_chat_blocks": [
+        "Q059"
+      ]
+    },
+    {
+      "file": "definitions/02_inventory_views.sql",
+      "object": "analytics.zero_closing_reviews",
+      "dump_line": 523,
+      "statement_sha256_lf_utf8": "793d6f106058c7bbfdb659b1c33253ce687b8aacdcf4495c4d8a56db97eb7fe6",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "core.inventory_period",
+      "dump_line": 545,
+      "statement_sha256_lf_utf8": "82a6734a442becee559ca9c913f0898104437f906fcb83d1b97f14b990d56476",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "core.products",
+      "dump_line": 560,
+      "statement_sha256_lf_utf8": "de146a518260ec5a96cbaa51e48eae001b6ae8b5ef15ccf16ebe47a32e039e26",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "staging.catalogue_prices_raw",
+      "dump_line": 575,
+      "statement_sha256_lf_utf8": "8448ffbc715dd40742841467eddd46646cec728c08c0f94a10c0009648a0e1b6",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "staging.inventory_summary",
+      "dump_line": 590,
+      "statement_sha256_lf_utf8": "adcba810f146129f9fda98c2d856a51d305e94004e596eef7ca8669cf64fe6e6",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "core.inventory_period",
+      "dump_line": 618,
+      "statement_sha256_lf_utf8": "26302b3856ece44b2ba9ea3fed30955b3dc926853d3e0750a6530c2984b3a0ad",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "core.products",
+      "dump_line": 627,
+      "statement_sha256_lf_utf8": "48216cf2a79bdd2406bf4f5d7b7b680bd0a2f1d72c42aad208eaa1e1ac07660e",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "core.products",
+      "dump_line": 636,
+      "statement_sha256_lf_utf8": "dea8d79c0ce8ac45588d16d6c788dccb11aedbac26386236e810b485a5a76243",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "core.inventory_period",
+      "dump_line": 645,
+      "statement_sha256_lf_utf8": "e3d28a698b3c263b5514fe2a460690e24bb5bb748ff4f3ea2bd9adfe16ce2542",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "staging.catalogue_prices_raw",
+      "dump_line": 654,
+      "statement_sha256_lf_utf8": "1a7c03246c1b61598908f5d7c785668fa2f953c226a5aa6e07820e722e9dfd9a",
+      "related_chat_blocks": []
+    },
+    {
+      "file": "definitions/01_schemas_tables_constraints.sql",
+      "object": "core.inventory_period",
+      "dump_line": 663,
+      "statement_sha256_lf_utf8": "c3c92a316aa24018ddf334ac8ed9e99d4284c92bbc1c5bfa19451d5a07e682e4",
+      "related_chat_blocks": []
+    }
+  ],
+  "chat_blocks": [
+    {
+      "id": "Q001",
+      "message": "M01",
+      "message_id": "msg_02f491edd9a20d5c016aa766b986e887d0a0d45eafde113833",
+      "turn_id": "01a09de7-a42b-7343-8ef7-5321dbc58353",
+      "date": "2026-09-14 11:13:18 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "68b05b82017e8bb3454c5946e7f6fe404947d9b59673077bdb0d6028081c359e",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q002",
+      "message": "M01",
+      "message_id": "msg_02f491edd9a20d5c016aa766b986e887d0a0d45eafde113833",
+      "turn_id": "01a09de7-a42b-7343-8ef7-5321dbc58353",
+      "date": "2026-09-14 11:13:18 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "4902161b6da9cda725772d3a836b28af2f359fe7b226a30e76a284eb61e483a7",
+      "status": "Early product-code catalogue design; absent from the current dump.",
+      "selected_file": null
+    },
+    {
+      "id": "Q003",
+      "message": "M01",
+      "message_id": "msg_02f491edd9a20d5c016aa766b986e887d0a0d45eafde113833",
+      "turn_id": "01a09de7-a42b-7343-8ef7-5321dbc58353",
+      "date": "2026-09-14 11:13:18 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "5e337e6542932def71b49e1a03c6a5c92132ed30756281a9f3801a4cd0b7f6a7",
+      "status": "Early staging layout; replaced by Q015 with warehouse and a different column order.",
+      "selected_file": null
+    },
+    {
+      "id": "Q004",
+      "message": "M01",
+      "message_id": "msg_02f491edd9a20d5c016aa766b986e887d0a0d45eafde113833",
+      "turn_id": "01a09de7-a42b-7343-8ef7-5321dbc58353",
+      "date": "2026-09-14 11:13:18 +08:00",
+      "block": 4,
+      "sql_sha256_lf_utf8": "3ae603635377adb0c58189f188197c047993b59f3973a964df3f27f2529ccb1d",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q005",
+      "message": "M01",
+      "message_id": "msg_02f491edd9a20d5c016aa766b986e887d0a0d45eafde113833",
+      "turn_id": "01a09de7-a42b-7343-8ef7-5321dbc58353",
+      "date": "2026-09-14 11:13:18 +08:00",
+      "block": 5,
+      "sql_sha256_lf_utf8": "6b212a9b2052e2729a558de3491c2b0e5cecaecc0354cd5a26d0a32af489b541",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q006",
+      "message": "M01",
+      "message_id": "msg_02f491edd9a20d5c016aa766b986e887d0a0d45eafde113833",
+      "turn_id": "01a09de7-a42b-7343-8ef7-5321dbc58353",
+      "date": "2026-09-14 11:13:18 +08:00",
+      "block": 6,
+      "sql_sha256_lf_utf8": "48016605057b377ec18907f6521c6ce083340e61f11ff6da3a901058c36b67c1",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q007",
+      "message": "M01",
+      "message_id": "msg_02f491edd9a20d5c016aa766b986e887d0a0d45eafde113833",
+      "turn_id": "01a09de7-a42b-7343-8ef7-5321dbc58353",
+      "date": "2026-09-14 11:13:18 +08:00",
+      "block": 7,
+      "sql_sha256_lf_utf8": "8e06df163f4a2201a16176d3674587617d04f35b1c041c1271d2e591c31002c2",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q008",
+      "message": "M01",
+      "message_id": "msg_02f491edd9a20d5c016aa766b986e887d0a0d45eafde113833",
+      "turn_id": "01a09de7-a42b-7343-8ef7-5321dbc58353",
+      "date": "2026-09-14 11:13:18 +08:00",
+      "block": 8,
+      "sql_sha256_lf_utf8": "e11ea132648661fa8d2b3a6b24ee6b993efc795a61173ed61348d01dc01ef629",
+      "status": "Early product schema includes product_group; the current table does not.",
+      "selected_file": null
+    },
+    {
+      "id": "Q009",
+      "message": "M01",
+      "message_id": "msg_02f491edd9a20d5c016aa766b986e887d0a0d45eafde113833",
+      "turn_id": "01a09de7-a42b-7343-8ef7-5321dbc58353",
+      "date": "2026-09-14 11:13:18 +08:00",
+      "block": 9,
+      "sql_sha256_lf_utf8": "906447cb0f640579b6aba5776e19188b683eb838d35ef49b4571ffa933f88d2d",
+      "status": "Proposed core.price_history is absent from the current dump.",
+      "selected_file": null
+    },
+    {
+      "id": "Q010",
+      "message": "M01",
+      "message_id": "msg_02f491edd9a20d5c016aa766b986e887d0a0d45eafde113833",
+      "turn_id": "01a09de7-a42b-7343-8ef7-5321dbc58353",
+      "date": "2026-09-14 11:13:18 +08:00",
+      "block": 10,
+      "sql_sha256_lf_utf8": "246a8a127338f393890478e0c6139950e596328ba0bbc39e32f5a40ed6a06004",
+      "status": "Early inventory schema; current grain includes warehouse and average costs use four decimals.",
+      "selected_file": null
+    },
+    {
+      "id": "Q011",
+      "message": "M01",
+      "message_id": "msg_02f491edd9a20d5c016aa766b986e887d0a0d45eafde113833",
+      "turn_id": "01a09de7-a42b-7343-8ef7-5321dbc58353",
+      "date": "2026-09-14 11:13:18 +08:00",
+      "block": 11,
+      "sql_sha256_lf_utf8": "610341f96462ebc22b2645e7e96e6454aab81ab1276e94c4e070d58e73898125",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q012",
+      "message": "M01",
+      "message_id": "msg_02f491edd9a20d5c016aa766b986e887d0a0d45eafde113833",
+      "turn_id": "01a09de7-a42b-7343-8ef7-5321dbc58353",
+      "date": "2026-09-14 11:13:18 +08:00",
+      "block": 12,
+      "sql_sha256_lf_utf8": "b5f0dd84f399151979a9e520cdece39657203f531807bb2f668641f1c66f1668",
+      "status": "Early status view references product_group; superseded by Q051 and the dump.",
+      "selected_file": null
+    },
+    {
+      "id": "Q013",
+      "message": "M02",
+      "message_id": "msg_02f491edd9a20d5c016aa95d7cea2087d0983e619670e29817",
+      "turn_id": "01a0a594-cc3e-7a52-a8b2-d3b9da62f53c",
+      "date": "2026-09-15 22:59:47 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "68b05b82017e8bb3454c5946e7f6fe404947d9b59673077bdb0d6028081c359e",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q014",
+      "message": "M03",
+      "message_id": "msg_02f491edd9a20d5c016aa95db51cf487d085a978364a21f150",
+      "turn_id": "01a0a595-f369-7a43-bb04-9cf78c4b1e7f",
+      "date": "2026-09-15 23:01:02 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "d7ccdad06846e6ae9a417692ba0a7877f4e442f00e84ceaae29817b3998e4300",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q015",
+      "message": "M04",
+      "message_id": "msg_02f491edd9a20d5c016aab687d608087d0a23fe09344e89604",
+      "turn_id": "01a0ad8f-cbbe-7080-a3a6-a66ea9e4ec81",
+      "date": "2026-09-17 12:11:17 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "a449301ffde231a635e2f2d3ef916b2d27bcd532ca2b28402d00d9db1edb54b6",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q016",
+      "message": "M04",
+      "message_id": "msg_02f491edd9a20d5c016aab687d608087d0a23fe09344e89604",
+      "turn_id": "01a0ad8f-cbbe-7080-a3a6-a66ea9e4ec81",
+      "date": "2026-09-17 12:11:17 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "c2fc997004f3325a129e98875a2fb4a8a4537018b1535f0aa78202948016ae6c",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q017",
+      "message": "M04",
+      "message_id": "msg_02f491edd9a20d5c016aab687d608087d0a23fe09344e89604",
+      "turn_id": "01a0ad8f-cbbe-7080-a3a6-a66ea9e4ec81",
+      "date": "2026-09-17 12:11:17 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "71f8d78d6a000b96e084b1844b87f5d3811e6d61b24930d752e9245dd8ac0990",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q018",
+      "message": "M05",
+      "message_id": "msg_02f491edd9a20d5c016aaba0e1085487d0ab12ca7a08da08d3",
+      "turn_id": "01a0ae6c-0751-7491-b427-4275139590f4",
+      "date": "2026-09-17 16:11:50 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "c2fc997004f3325a129e98875a2fb4a8a4537018b1535f0aa78202948016ae6c",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q019",
+      "message": "M06",
+      "message_id": "msg_02f491edd9a20d5c016aaba15e0e5087d0be085cfb92879473",
+      "turn_id": "01a0ae6e-0b26-76f0-9ce1-d2323477f42c",
+      "date": "2026-09-17 16:14:02 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "03eac7006909ef5c253a668c1eeba4b9af9072861d27dab7acc3420a8dea0fb8",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q020",
+      "message": "M06",
+      "message_id": "msg_02f491edd9a20d5c016aaba15e0e5087d0be085cfb92879473",
+      "turn_id": "01a0ae6e-0b26-76f0-9ce1-d2323477f42c",
+      "date": "2026-09-17 16:14:02 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "c2fc997004f3325a129e98875a2fb4a8a4537018b1535f0aa78202948016ae6c",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q021",
+      "message": "M07",
+      "message_id": "msg_02f491edd9a20d5c016aabff614be087d0a26f48c5be26c1ee",
+      "turn_id": "01a0afdc-c78d-7262-ba8a-2e84f79f59fe",
+      "date": "2026-09-17 22:54:37 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "71f8d78d6a000b96e084b1844b87f5d3811e6d61b24930d752e9245dd8ac0990",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q022",
+      "message": "M07",
+      "message_id": "msg_02f491edd9a20d5c016aabff614be087d0a26f48c5be26c1ee",
+      "turn_id": "01a0afdc-c78d-7262-ba8a-2e84f79f59fe",
+      "date": "2026-09-17 22:54:37 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "c2fc997004f3325a129e98875a2fb4a8a4537018b1535f0aa78202948016ae6c",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q023",
+      "message": "M08",
+      "message_id": "msg_02f491edd9a20d5c016aabff8f3c8087d08ae1fc5c52aa3257",
+      "turn_id": "01a0afde-239d-74f2-ae54-a400ffd8fe56",
+      "date": "2026-09-17 22:56:06 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "03eac7006909ef5c253a668c1eeba4b9af9072861d27dab7acc3420a8dea0fb8",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q024",
+      "message": "M08",
+      "message_id": "msg_02f491edd9a20d5c016aabff8f3c8087d08ae1fc5c52aa3257",
+      "turn_id": "01a0afde-239d-74f2-ae54-a400ffd8fe56",
+      "date": "2026-09-17 22:56:06 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "c2fc997004f3325a129e98875a2fb4a8a4537018b1535f0aa78202948016ae6c",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q025",
+      "message": "M09",
+      "message_id": "msg_02f491edd9a20d5c016aac035acec087d0a9830ce74bc04ce4",
+      "turn_id": "01a0afec-f169-7f31-a33e-d760fd5e6279",
+      "date": "2026-09-17 23:12:16 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "c86df83881a5a9fb715448b95c871b8613fcfae8b67444853ac97f786e80c45c",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "recovered/imports.sql"
+    },
+    {
+      "id": "Q026",
+      "message": "M09",
+      "message_id": "msg_02f491edd9a20d5c016aac035acec087d0a9830ce74bc04ce4",
+      "turn_id": "01a0afec-f169-7f31-a33e-d760fd5e6279",
+      "date": "2026-09-17 23:12:16 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "c2fc997004f3325a129e98875a2fb4a8a4537018b1535f0aa78202948016ae6c",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q027",
+      "message": "M10",
+      "message_id": "msg_02f491edd9a20d5c016aac03881ec487d0bef8397a6afacd9d",
+      "turn_id": "01a0afed-77bb-7531-bb41-abd48def5d4f",
+      "date": "2026-09-17 23:12:50 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "c86df83881a5a9fb715448b95c871b8613fcfae8b67444853ac97f786e80c45c",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q028",
+      "message": "M11",
+      "message_id": "msg_02f491edd9a20d5c016aac08f5fe7887d0bcdee8dc1a905ede",
+      "turn_id": "01a0b002-b711-7bf1-ba18-b9907df3fce2",
+      "date": "2026-09-17 23:36:03 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "01a2f8283da6b27378f4a16280d7c35776eef956405c840c1a4c8f100f4e4c5e",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q029",
+      "message": "M11",
+      "message_id": "msg_02f491edd9a20d5c016aac08f5fe7887d0bcdee8dc1a905ede",
+      "turn_id": "01a0b002-b711-7bf1-ba18-b9907df3fce2",
+      "date": "2026-09-17 23:36:03 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "9ba2da14f06cc9e905bb4b0e0e97a438d663899b7572590de15c5713f0acec14",
+      "status": "DELETE proposed for unwanted blank-code rows. No row contents/execution log supplied; excluded from workflow.",
+      "selected_file": null
+    },
+    {
+      "id": "Q030",
+      "message": "M11",
+      "message_id": "msg_02f491edd9a20d5c016aac08f5fe7887d0bcdee8dc1a905ede",
+      "turn_id": "01a0b002-b711-7bf1-ba18-b9907df3fce2",
+      "date": "2026-09-17 23:36:03 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "c2fc997004f3325a129e98875a2fb4a8a4537018b1535f0aa78202948016ae6c",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q031",
+      "message": "M12",
+      "message_id": "msg_02f491edd9a20d5c016aac096a9d8087d0ba9c99c821b40dd8",
+      "turn_id": "01a0b004-9037-7693-8525-b012ade0faaa",
+      "date": "2026-09-17 23:38:04 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "1ccb620cd0ea53af62128d6e8b095d00d4061d5140b5e0b862885993df82eab8",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q032",
+      "message": "M12",
+      "message_id": "msg_02f491edd9a20d5c016aac096a9d8087d0ba9c99c821b40dd8",
+      "turn_id": "01a0b004-9037-7693-8525-b012ade0faaa",
+      "date": "2026-09-17 23:38:04 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "ad368e21e81175e0a360e9cf6391fff72a6656d990b59f7186f2d98865715b8c",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q033",
+      "message": "M12",
+      "message_id": "msg_02f491edd9a20d5c016aac096a9d8087d0ba9c99c821b40dd8",
+      "turn_id": "01a0b004-9037-7693-8525-b012ade0faaa",
+      "date": "2026-09-17 23:38:04 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "2379bdc6ca6028c825afc67f3e70fa29c012ad012a7a331e8e1bf4cd1bb57417",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q034",
+      "message": "M13",
+      "message_id": "msg_02f491edd9a20d5c016aad49632dd487d085fb955ece172a04",
+      "turn_id": "01a0b4e6-4595-7e12-aa23-e57ad7683799",
+      "date": "2026-09-18 22:23:05 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "cd828d18708b2449f22e95c18dddced7f87646bc0197288e1cc0cb521c974e15",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q035",
+      "message": "M13",
+      "message_id": "msg_02f491edd9a20d5c016aad49632dd487d085fb955ece172a04",
+      "turn_id": "01a0b4e6-4595-7e12-aa23-e57ad7683799",
+      "date": "2026-09-18 22:23:05 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "0914d0075503bb90def7d5d2b66e1efbf31d7d33ab95f1e7923dedbbc036ac84",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "recovered/inventory_population.sql"
+    },
+    {
+      "id": "Q036",
+      "message": "M13",
+      "message_id": "msg_02f491edd9a20d5c016aad49632dd487d085fb955ece172a04",
+      "turn_id": "01a0b4e6-4595-7e12-aa23-e57ad7683799",
+      "date": "2026-09-18 22:23:05 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "1d043a88741890892b0b6dabf558d9225bc51830ae77d520eefcea5223966e58",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q037",
+      "message": "M13",
+      "message_id": "msg_02f491edd9a20d5c016aad49632dd487d085fb955ece172a04",
+      "turn_id": "01a0b4e6-4595-7e12-aa23-e57ad7683799",
+      "date": "2026-09-18 22:23:05 +08:00",
+      "block": 4,
+      "sql_sha256_lf_utf8": "c6f94716ce45832161fa8d3c5780842c78d730ee228c8a09282d0e5cb3a0fe5a",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q038",
+      "message": "M14",
+      "message_id": "msg_02f491edd9a20d5c016ab3c3a5d88487d0bb609d602be571a9",
+      "turn_id": "01a0ce33-c4c7-7c41-a506-ce63047ce07d",
+      "date": "2026-09-23 20:18:14 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "1e91e6f065cd21875b7bdac11e028332e260f5acb6a19ff34b5769b5b55b79a3",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q039",
+      "message": "M14",
+      "message_id": "msg_02f491edd9a20d5c016ab3c3a5d88487d0bb609d602be571a9",
+      "turn_id": "01a0ce33-c4c7-7c41-a506-ce63047ce07d",
+      "date": "2026-09-23 20:18:14 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "a3bca3d10e75d3697161fdc919b4211ce0efff184ddac5591923a5de042973b3",
+      "status": "Direct numeric casting reportedly failed on comma-separated numbers; Q043 is the corrected chat version.",
+      "selected_file": null
+    },
+    {
+      "id": "Q040",
+      "message": "M14",
+      "message_id": "msg_02f491edd9a20d5c016ab3c3a5d88487d0bb609d602be571a9",
+      "turn_id": "01a0ce33-c4c7-7c41-a506-ce63047ce07d",
+      "date": "2026-09-23 20:18:14 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "9e8e41ebd914f70143cf4061d8ed891fb157fca03f605dace44545f029655923",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q041",
+      "message": "M14",
+      "message_id": "msg_02f491edd9a20d5c016ab3c3a5d88487d0bb609d602be571a9",
+      "turn_id": "01a0ce33-c4c7-7c41-a506-ce63047ce07d",
+      "date": "2026-09-23 20:18:14 +08:00",
+      "block": 4,
+      "sql_sha256_lf_utf8": "3b8b74d15357f40aa60c45e5e7e7155aca603f4e00eefb0f565dbb76ba80b1a8",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q042",
+      "message": "M15",
+      "message_id": "msg_02f491edd9a20d5c016ab3c455293487d09f659e26b62f7c1a",
+      "turn_id": "01a0ce36-b337-7a21-85e2-1582c0660db5",
+      "date": "2026-09-23 20:21:26 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "77b1e963ded7432cb617154d68cbf94f6c6ec75d393bb471eeeb5788e2b9de0c",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q043",
+      "message": "M15",
+      "message_id": "msg_02f491edd9a20d5c016ab3c455293487d09f659e26b62f7c1a",
+      "turn_id": "01a0ce36-b337-7a21-85e2-1582c0660db5",
+      "date": "2026-09-23 20:21:26 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "25831cab3123f465a5589ac3922f5452475bdb9e875f3df943d860f354f61bef",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "recovered/inventory_population.sql"
+    },
+    {
+      "id": "Q044",
+      "message": "M15",
+      "message_id": "msg_02f491edd9a20d5c016ab3c455293487d09f659e26b62f7c1a",
+      "turn_id": "01a0ce36-b337-7a21-85e2-1582c0660db5",
+      "date": "2026-09-23 20:21:26 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "a4181acec4d110013ab00ba129ac79e83851f96724a1874a2305f0f7754c676e",
+      "status": "Explanatory expression fragment, not a standalone SQL statement.",
+      "selected_file": null
+    },
+    {
+      "id": "Q045",
+      "message": "M15",
+      "message_id": "msg_02f491edd9a20d5c016ab3c455293487d09f659e26b62f7c1a",
+      "turn_id": "01a0ce36-b337-7a21-85e2-1582c0660db5",
+      "date": "2026-09-23 20:21:26 +08:00",
+      "block": 4,
+      "sql_sha256_lf_utf8": "9e8e41ebd914f70143cf4061d8ed891fb157fca03f605dace44545f029655923",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q046",
+      "message": "M16",
+      "message_id": "msg_02f491edd9a20d5c016ab51428868487d0ad282586f8ec031a",
+      "turn_id": "01a0d356-8461-78b1-bd1c-b50dfb775cf0",
+      "date": "2026-09-24 20:14:17 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "04b5b80b0b621068c3274b77e7834fe2ee0d07c06a26b53f7c8b86c486f4b04d",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q047",
+      "message": "M16",
+      "message_id": "msg_02f491edd9a20d5c016ab51428868487d0ad282586f8ec031a",
+      "turn_id": "01a0d356-8461-78b1-bd1c-b50dfb775cf0",
+      "date": "2026-09-24 20:14:17 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "963760e1a47954b79a68112ed381897f3930df2b9965e972b70c1a2f23068614",
+      "status": "Historical quantity/value totals; mixed-unit quantity sums must not be presented as homogeneous stock.",
+      "selected_file": null
+    },
+    {
+      "id": "Q048",
+      "message": "M17",
+      "message_id": "msg_02f491edd9a20d5c016ab514e4f8c487d0b3275e731c6dd38c",
+      "turn_id": "01a0d359-52da-7760-8687-81997c78ff65",
+      "date": "2026-09-24 20:17:21 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "0ae0ac2851618d2237ce52f1c34d71a05f414d2ca429e69a32d3884fca2536fc",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q049",
+      "message": "M17",
+      "message_id": "msg_02f491edd9a20d5c016ab514e4f8c487d0b3275e731c6dd38c",
+      "turn_id": "01a0d359-52da-7760-8687-81997c78ff65",
+      "date": "2026-09-24 20:17:21 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "b1bba3f2d0bcce1080a2df995d1036ef60215faa97f46bcf6e7b8448263df8b5",
+      "status": "Historical COALESCE UPDATE. Blank-to-zero meaning is not established by the dump; not included in population scripts.",
+      "selected_file": null
+    },
+    {
+      "id": "Q050",
+      "message": "M17",
+      "message_id": "msg_02f491edd9a20d5c016ab514e4f8c487d0b3275e731c6dd38c",
+      "turn_id": "01a0d359-52da-7760-8687-81997c78ff65",
+      "date": "2026-09-24 20:17:21 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "04b5b80b0b621068c3274b77e7834fe2ee0d07c06a26b53f7c8b86c486f4b04d",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q051",
+      "message": "M18",
+      "message_id": "msg_02f491edd9a20d5c016ab515823c2087d086817476eb6a9481",
+      "turn_id": "01a0d35b-b7cb-7443-850e-aa8f8f452bc6",
+      "date": "2026-09-24 20:19:58 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "01e76d6784f2ab8231108b1476ae5e30ef094d16ccc79ca1be8753373a9569d1",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q052",
+      "message": "M18",
+      "message_id": "msg_02f491edd9a20d5c016ab515823c2087d086817476eb6a9481",
+      "turn_id": "01a0d35b-b7cb-7443-850e-aa8f8f452bc6",
+      "date": "2026-09-24 20:19:58 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "f0a0143c8a013259867f09d3725e4bdad32da8f850f3291cf09a497aa38cc8b9",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q053",
+      "message": "M18",
+      "message_id": "msg_02f491edd9a20d5c016ab515823c2087d086817476eb6a9481",
+      "turn_id": "01a0d35b-b7cb-7443-850e-aa8f8f452bc6",
+      "date": "2026-09-24 20:19:58 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "e99fdccf63cf04e467173ef561d2212113ab5528543e0697a3f507ee3d3aa16b",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q054",
+      "message": "M19",
+      "message_id": "msg_02f491edd9a20d5c016ab517b83a6487d0a51d05ab13965a74",
+      "turn_id": "01a0d364-520a-77e3-bb7b-2c34af468d43",
+      "date": "2026-09-24 20:29:22 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "09becdb463c9ede190c6df04239c7b1070a0464ce71b03f86e6903b1af48776d",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q055",
+      "message": "M19",
+      "message_id": "msg_02f491edd9a20d5c016ab517b83a6487d0a51d05ab13965a74",
+      "turn_id": "01a0d364-520a-77e3-bb7b-2c34af468d43",
+      "date": "2026-09-24 20:29:22 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "3387c6492ba7bc8e7be332ca37061cdddec4374378774ab401666769c74e91b9",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q056",
+      "message": "M20",
+      "message_id": "msg_02f491edd9a20d5c016ab51ee5207087d088f0d615e621ffbb",
+      "turn_id": "01a0d380-64b5-7a91-b1dd-c36ad0cd45f9",
+      "date": "2026-09-24 21:00:02 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "4507582847a0e3f20c9c4f7d6aac66c84efeafbe3498b715b3969cbbcb1819f6",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q057",
+      "message": "M20",
+      "message_id": "msg_02f491edd9a20d5c016ab51ee5207087d088f0d615e621ffbb",
+      "turn_id": "01a0d380-64b5-7a91-b1dd-c36ad0cd45f9",
+      "date": "2026-09-24 21:00:02 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "4475a210f2c38f84ed17a2da04f0b8ae1af49a5d3714b877785a7d3d6f0164a8",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q058",
+      "message": "M20",
+      "message_id": "msg_02f491edd9a20d5c016ab51ee5207087d088f0d615e621ffbb",
+      "turn_id": "01a0d380-64b5-7a91-b1dd-c36ad0cd45f9",
+      "date": "2026-09-24 21:00:02 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "ab9ecc78a7e7a3b5847fe0d8568afa6cbb123e6d7a27efec869b5530e494b4f4",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q059",
+      "message": "M20",
+      "message_id": "msg_02f491edd9a20d5c016ab51ee5207087d088f0d615e621ffbb",
+      "turn_id": "01a0d380-64b5-7a91-b1dd-c36ad0cd45f9",
+      "date": "2026-09-24 21:00:02 +08:00",
+      "block": 4,
+      "sql_sha256_lf_utf8": "59df63c333d882df30da33664ee605e90be488b72c51fede59a86fa8f8367a4e",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q060",
+      "message": "M20",
+      "message_id": "msg_02f491edd9a20d5c016ab51ee5207087d088f0d615e621ffbb",
+      "turn_id": "01a0d380-64b5-7a91-b1dd-c36ad0cd45f9",
+      "date": "2026-09-24 21:00:02 +08:00",
+      "block": 5,
+      "sql_sha256_lf_utf8": "49590d4406ae58c5a7375e93459a3228ff09759c0a076fdd8e8f2e5e84b9fb0a",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q061",
+      "message": "M20",
+      "message_id": "msg_02f491edd9a20d5c016ab51ee5207087d088f0d615e621ffbb",
+      "turn_id": "01a0d380-64b5-7a91-b1dd-c36ad0cd45f9",
+      "date": "2026-09-24 21:00:02 +08:00",
+      "block": 6,
+      "sql_sha256_lf_utf8": "e2a9567fac45a6d1f72e4d85065f333d3c3a476ce93364296e15b3f8c2c305ce",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q062",
+      "message": "M21",
+      "message_id": "msg_02f491edd9a20d5c016ab903ccecd887d08ec8f527a1ec270e",
+      "turn_id": "01a0e2b6-91a1-7730-b2cd-b043a41fddcd",
+      "date": "2026-09-27 19:53:30 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "92dfb5a861394147c93ca76e96e0b558c1ff1003bedb17e4f3012f568e790c43",
+      "status": "Database-selection troubleshooting only.",
+      "selected_file": null
+    },
+    {
+      "id": "Q063",
+      "message": "M21",
+      "message_id": "msg_02f491edd9a20d5c016ab903ccecd887d08ec8f527a1ec270e",
+      "turn_id": "01a0e2b6-91a1-7730-b2cd-b043a41fddcd",
+      "date": "2026-09-27 19:53:30 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "fe0701f5636ed5e3ea08f7d461fb77a10531356adf03560f2ef278a676d0ed41",
+      "status": "View-discovery troubleshooting only.",
+      "selected_file": null
+    },
+    {
+      "id": "Q064",
+      "message": "M21",
+      "message_id": "msg_02f491edd9a20d5c016ab903ccecd887d08ec8f527a1ec270e",
+      "turn_id": "01a0e2b6-91a1-7730-b2cd-b043a41fddcd",
+      "date": "2026-09-27 19:53:30 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "4764b905707d365697d20f595cd24a480eacce226eb6f4d1022b39450aca99ba",
+      "status": "Repeated singular no_movement view. The plural version exists in the dump but no plural CREATE was recovered.",
+      "selected_file": null
+    },
+    {
+      "id": "Q065",
+      "message": "M21",
+      "message_id": "msg_02f491edd9a20d5c016ab903ccecd887d08ec8f527a1ec270e",
+      "turn_id": "01a0e2b6-91a1-7730-b2cd-b043a41fddcd",
+      "date": "2026-09-27 19:53:30 +08:00",
+      "block": 4,
+      "sql_sha256_lf_utf8": "4475a210f2c38f84ed17a2da04f0b8ae1af49a5d3714b877785a7d3d6f0164a8",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q066",
+      "message": "M22",
+      "message_id": "msg_02f491edd9a20d5c016ab9042810c087d0a37019b4c479c888",
+      "turn_id": "01a0e2b7-fb8d-76f3-ace4-b2cc9d79122f",
+      "date": "2026-09-27 19:55:03 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "cb73bc4d7163d1be855334233b469eb5f5edee00725f4b85a4695498ffb95c15",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q067",
+      "message": "M22",
+      "message_id": "msg_02f491edd9a20d5c016ab9042810c087d0a37019b4c479c888",
+      "turn_id": "01a0e2b7-fb8d-76f3-ace4-b2cc9d79122f",
+      "date": "2026-09-27 19:55:03 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "06d90a03be29ba160d05bcdbf68d9099dd29c0c41959a84ed17071cab79947b8",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q068",
+      "message": "M22",
+      "message_id": "msg_02f491edd9a20d5c016ab9042810c087d0a37019b4c479c888",
+      "turn_id": "01a0e2b7-fb8d-76f3-ace4-b2cc9d79122f",
+      "date": "2026-09-27 19:55:03 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "ff329c4048a0a709cadadc315407388809d78add898f272f9e86dd550acd5b14",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q069",
+      "message": "M23",
+      "message_id": "msg_02f491edd9a20d5c016ac0f3ba12d487d095735cb972968bd0",
+      "turn_id": "01a101b7-a64a-76f2-93e1-82da9cea6134",
+      "date": "2026-10-03 20:22:55 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "aaa5b6c3fe3d75b6599399977d670d2f65b616f6672020eeed41ef42cdd7cbaa",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q070",
+      "message": "M23",
+      "message_id": "msg_02f491edd9a20d5c016ac0f3ba12d487d095735cb972968bd0",
+      "turn_id": "01a101b7-a64a-76f2-93e1-82da9cea6134",
+      "date": "2026-10-03 20:22:55 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "648eb963d5ae5bfdfec217338c8fdbf2741c30f57879ffa3f99512169ff5ccce",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q071",
+      "message": "M24",
+      "message_id": "msg_02f491edd9a20d5c016acb62c4c47087d0b3c87fa259024391",
+      "turn_id": "01a12a79-996f-7483-bce4-b8a6bbd65b01",
+      "date": "2026-10-11 18:19:34 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "708017f8c8940b38c197ebc693d71a784d59c63164b5f69d6c8ab0bc6af7902d",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q072",
+      "message": "M24",
+      "message_id": "msg_02f491edd9a20d5c016acb62c4c47087d0b3c87fa259024391",
+      "turn_id": "01a12a79-996f-7483-bce4-b8a6bbd65b01",
+      "date": "2026-10-11 18:19:34 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "c8160d4b24af8923f78531df848eacc27aa6823ea36816f70e69dbb7841f75da",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q073",
+      "message": "M24",
+      "message_id": "msg_02f491edd9a20d5c016acb62c4c47087d0b3c87fa259024391",
+      "turn_id": "01a12a79-996f-7483-bce4-b8a6bbd65b01",
+      "date": "2026-10-11 18:19:34 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "1085f44e049bd5c0903864d211225bd8f0d0627c9020809e11cc12ab841347d5",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q074",
+      "message": "M25",
+      "message_id": "msg_02f491edd9a20d5c016acb63bdfe8887d09dbb1886f6865e63",
+      "turn_id": "01a12a7d-667e-75f1-af30-f6f5940c80eb",
+      "date": "2026-10-11 18:23:43 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "708017f8c8940b38c197ebc693d71a784d59c63164b5f69d6c8ab0bc6af7902d",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q075",
+      "message": "M25",
+      "message_id": "msg_02f491edd9a20d5c016acb63bdfe8887d09dbb1886f6865e63",
+      "turn_id": "01a12a7d-667e-75f1-af30-f6f5940c80eb",
+      "date": "2026-10-11 18:23:43 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "97d91e137a87e5ba019516a744fbeedee8069294d0fac93927e1c56b6bd8f215",
+      "status": "Destructive TRUNCATE/identity reset suggested during import repair; excluded from workflow.",
+      "selected_file": null
+    },
+    {
+      "id": "Q076",
+      "message": "M25",
+      "message_id": "msg_02f491edd9a20d5c016acb63bdfe8887d09dbb1886f6865e63",
+      "turn_id": "01a12a7d-667e-75f1-af30-f6f5940c80eb",
+      "date": "2026-10-11 18:23:43 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "708017f8c8940b38c197ebc693d71a784d59c63164b5f69d6c8ab0bc6af7902d",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q077",
+      "message": "M25",
+      "message_id": "msg_02f491edd9a20d5c016acb63bdfe8887d09dbb1886f6865e63",
+      "turn_id": "01a12a7d-667e-75f1-af30-f6f5940c80eb",
+      "date": "2026-10-11 18:23:43 +08:00",
+      "block": 4,
+      "sql_sha256_lf_utf8": "69fb770ea3ef955890d8b58fae73042543573479409880cfe4a6d1ce8cae9daf",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q078",
+      "message": "M26",
+      "message_id": "msg_02f491edd9a20d5c016acb6487d5e887d0af73c1889974c0b4",
+      "turn_id": "01a12a80-9643-7d53-b4aa-9b9558a00542",
+      "date": "2026-10-11 18:27:12 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "c8160d4b24af8923f78531df848eacc27aa6823ea36816f70e69dbb7841f75da",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q079",
+      "message": "M27",
+      "message_id": "msg_02f491edd9a20d5c016acb787bfce887d08e63bc8cbc0bde95",
+      "turn_id": "01a12acc-f74e-7322-93fa-db54458289f7",
+      "date": "2026-10-11 19:50:38 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "708017f8c8940b38c197ebc693d71a784d59c63164b5f69d6c8ab0bc6af7902d",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q080",
+      "message": "M27",
+      "message_id": "msg_02f491edd9a20d5c016acb787bfce887d08e63bc8cbc0bde95",
+      "turn_id": "01a12acc-f74e-7322-93fa-db54458289f7",
+      "date": "2026-10-11 19:50:38 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "05e2e086cecd429e96d65cd71465b676b1cb9f4b28f3b940d3dd0c874649ae4d",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q081",
+      "message": "M27",
+      "message_id": "msg_02f491edd9a20d5c016acb787bfce887d08e63bc8cbc0bde95",
+      "turn_id": "01a12acc-f74e-7322-93fa-db54458289f7",
+      "date": "2026-10-11 19:50:38 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "c8160d4b24af8923f78531df848eacc27aa6823ea36816f70e69dbb7841f75da",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q082",
+      "message": "M28",
+      "message_id": "msg_02f491edd9a20d5c016acb7f062a2087d0975937654e23acd3",
+      "turn_id": "01a12ae7-d75e-7ea2-89a7-226695dc8e70",
+      "date": "2026-10-11 20:19:59 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "e450a520032083164682dfe8811e990914cd2c11aea467ee037ea192bc030e5b",
+      "status": "Activity/lock diagnostic, not part of the analytical transformation.",
+      "selected_file": null
+    },
+    {
+      "id": "Q083",
+      "message": "M29",
+      "message_id": "msg_02f491edd9a20d5c016acb7f38715487d0afb2a5f578cd3cc6",
+      "turn_id": "01a12ae8-d0a1-7a62-9231-64d42f308103",
+      "date": "2026-10-11 20:21:03 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "4f2c4b17946d17cf6c3a5206b53d131396834400154deacf03c1f7a0b9b47809",
+      "status": "Incomplete COPY illustration with a local path; not executable.",
+      "selected_file": null
+    },
+    {
+      "id": "Q084",
+      "message": "M30",
+      "message_id": "msg_02f491edd9a20d5c016acb7fa7f2e087d0bd7da12a911333e0",
+      "turn_id": "01a12aea-7ae5-7a82-b07e-7739f58cb7be",
+      "date": "2026-10-11 20:22:52 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "708017f8c8940b38c197ebc693d71a784d59c63164b5f69d6c8ab0bc6af7902d",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q085",
+      "message": "M30",
+      "message_id": "msg_02f491edd9a20d5c016acb7fa7f2e087d0bd7da12a911333e0",
+      "turn_id": "01a12aea-7ae5-7a82-b07e-7739f58cb7be",
+      "date": "2026-10-11 20:22:52 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "05e2e086cecd429e96d65cd71465b676b1cb9f4b28f3b940d3dd0c874649ae4d",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "recovered/imports.sql"
+    },
+    {
+      "id": "Q086",
+      "message": "M31",
+      "message_id": "msg_02f491edd9a20d5c016acb7fe9b91887d094b177f722312b9a",
+      "turn_id": "01a12aeb-8a4d-7781-b812-1005476a4e7d",
+      "date": "2026-10-11 20:24:01 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "20335218a4fcc458aaccc71c28029f95a6356f766da34cd852ff529be0209513",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "recovered/imports.sql"
+    },
+    {
+      "id": "Q087",
+      "message": "M31",
+      "message_id": "msg_02f491edd9a20d5c016acb7fe9b91887d094b177f722312b9a",
+      "turn_id": "01a12aeb-8a4d-7781-b812-1005476a4e7d",
+      "date": "2026-10-11 20:24:01 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "cfdf78cb1ab9f4ebfb84b3ab6c8c703a238dfedbb2691869a63158830b178a88",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q088",
+      "message": "M31",
+      "message_id": "msg_02f491edd9a20d5c016acb7fe9b91887d094b177f722312b9a",
+      "turn_id": "01a12aeb-8a4d-7781-b812-1005476a4e7d",
+      "date": "2026-10-11 20:24:01 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "999c6e2ac9989357c3d1177097b58fbe7ae4a3dbcf00df8d54d2a0488d944924",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q089",
+      "message": "M32",
+      "message_id": "msg_02f491edd9a20d5c016acb8018e59887d090ccc1f9b52c2eb0",
+      "turn_id": "01a12aec-29be-7270-ae44-e2ab2cdc195b",
+      "date": "2026-10-11 20:24:42 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "62adcbf3b3c81c090ffab3c88fe53adec4cf1a23ae717237d79f1ce916093ab9",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q090",
+      "message": "M32",
+      "message_id": "msg_02f491edd9a20d5c016acb8018e59887d090ccc1f9b52c2eb0",
+      "turn_id": "01a12aec-29be-7270-ae44-e2ab2cdc195b",
+      "date": "2026-10-11 20:24:42 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "bfe03602ff57457efbaa0ade3bb1db48b3da1eb0091ba2cd8a10ff083ae64d54",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q091",
+      "message": "M33",
+      "message_id": "msg_02f491edd9a20d5c016acb804e958087d088f456d9a10708d1",
+      "turn_id": "01a12aec-fd86-71a0-abf0-6c3fbd562aec",
+      "date": "2026-10-11 20:25:36 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "1443c4d0a244bdaab0a60264d7741e7a5cf5501e6d0131b1796448b6bf2eb92d",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q092",
+      "message": "M33",
+      "message_id": "msg_02f491edd9a20d5c016acb804e958087d088f456d9a10708d1",
+      "turn_id": "01a12aec-fd86-71a0-abf0-6c3fbd562aec",
+      "date": "2026-10-11 20:25:36 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "a48cfa087a068a23f87a7c2387f5d2dadadfa517ea2f2f05a8cf205789528bdd",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q093",
+      "message": "M33",
+      "message_id": "msg_02f491edd9a20d5c016acb804e958087d088f456d9a10708d1",
+      "turn_id": "01a12aec-fd86-71a0-abf0-6c3fbd562aec",
+      "date": "2026-10-11 20:25:36 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "7550e4c2afc38efe3a04b75bafb80ef73cb4b35986a3b70616ddea77d69d11ee",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q094",
+      "message": "M34",
+      "message_id": "msg_02f491edd9a20d5c016acf8019ba9c87d0b4d86ccb93525ce7",
+      "turn_id": "01a13a8c-0115-77b1-b039-6b847d444f2a",
+      "date": "2026-10-14 21:13:36 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "35637535275d5f36fc60542ffa7870dd99d9044e5a08fda9213f3e2b2bed44b7",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q095",
+      "message": "M34",
+      "message_id": "msg_02f491edd9a20d5c016acf8019ba9c87d0b4d86ccb93525ce7",
+      "turn_id": "01a13a8c-0115-77b1-b039-6b847d444f2a",
+      "date": "2026-10-14 21:13:36 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "8ea527840c82023f439d4749dcae6eefeb15cdab6ff732ccb82a706ff574f74f",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q096",
+      "message": "M34",
+      "message_id": "msg_02f491edd9a20d5c016acf8019ba9c87d0b4d86ccb93525ce7",
+      "turn_id": "01a13a8c-0115-77b1-b039-6b847d444f2a",
+      "date": "2026-10-14 21:13:36 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "60f5d17395dac252bcc39ec5adebc4b493d0e46c1ad374f3376f8fffcddd478f",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q097",
+      "message": "M35",
+      "message_id": "msg_02f491edd9a20d5c016acf80741a2487d0bdb6756cbb6f4fce",
+      "turn_id": "01a13a8d-92dd-70e0-9492-ac323d4ff4b4",
+      "date": "2026-10-14 21:15:19 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "18d7d57940eecde7e72749b6843f38d40a739cc1db16ecbaa6c44bf24271e393",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q098",
+      "message": "M35",
+      "message_id": "msg_02f491edd9a20d5c016acf80741a2487d0bdb6756cbb6f4fce",
+      "turn_id": "01a13a8d-92dd-70e0-9492-ac323d4ff4b4",
+      "date": "2026-10-14 21:15:19 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "9e1dcc5c399e5f6d63a61a9c943a2c462a04d9a571d4084e4f7e036c3b793036",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q099",
+      "message": "M35",
+      "message_id": "msg_02f491edd9a20d5c016acf80741a2487d0bdb6756cbb6f4fce",
+      "turn_id": "01a13a8d-92dd-70e0-9492-ac323d4ff4b4",
+      "date": "2026-10-14 21:15:19 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "6298b2c70802ff648c0b1187ace86c64a449ac6ea76842eafc82be68f1e7f682",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q100",
+      "message": "M36",
+      "message_id": "msg_02f491edd9a20d5c016acf80c538ac87d0a5b6304523d664ff",
+      "turn_id": "01a13a8e-a9df-7600-b672-9d81b56dd5db",
+      "date": "2026-10-14 21:16:30 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "fc27e97b9a61877f7f59d59a69c8c0bd2cd3271bc44b9f208800ed458d18a10b",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q101",
+      "message": "M36",
+      "message_id": "msg_02f491edd9a20d5c016acf80c538ac87d0a5b6304523d664ff",
+      "turn_id": "01a13a8e-a9df-7600-b672-9d81b56dd5db",
+      "date": "2026-10-14 21:16:30 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "58013ca09229521e9d22e979b510908b71d4389305b13871cc4e14a615880ab2",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q102",
+      "message": "M36",
+      "message_id": "msg_02f491edd9a20d5c016acf80c538ac87d0a5b6304523d664ff",
+      "turn_id": "01a13a8e-a9df-7600-b672-9d81b56dd5db",
+      "date": "2026-10-14 21:16:30 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "83cf0f830d8c60086012ad9ecb7a9729396368603f7f31c9d47c6ecb05704383",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q103",
+      "message": "M37",
+      "message_id": "msg_02f491edd9a20d5c016acf8147966c87d08eab222229fc87fe",
+      "turn_id": "01a13a90-773e-79c2-9398-5c04b15ef78e",
+      "date": "2026-10-14 21:18:28 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "27cdad61ab5ff0e97eaca5d33e5067fd5ea042b62b618c422e0556155349e2ee",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q104",
+      "message": "M37",
+      "message_id": "msg_02f491edd9a20d5c016acf8147966c87d08eab222229fc87fe",
+      "turn_id": "01a13a90-773e-79c2-9398-5c04b15ef78e",
+      "date": "2026-10-14 21:18:28 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "dcb9fbc8ca25cfc7cd66b63a675c17b3ceff6fd347db0439e5647ec534eea251",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q105",
+      "message": "M37",
+      "message_id": "msg_02f491edd9a20d5c016acf8147966c87d08eab222229fc87fe",
+      "turn_id": "01a13a90-773e-79c2-9398-5c04b15ef78e",
+      "date": "2026-10-14 21:18:28 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "7e483f5b7d7de61a3ca718143df78e650f53f88305a2ea5338179d4af96243dc",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q106",
+      "message": "M38",
+      "message_id": "msg_02f491edd9a20d5c016ad75af26ec887d09b9bef2b38376ff7",
+      "turn_id": "01a1593a-b36c-7b53-9f36-ecf52ac27bd0",
+      "date": "2026-10-20 20:13:01 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "b6fb39455b2a5e0eded52ea96b8440a2fd40eeb771d5953523710a4be653a937",
+      "status": "Related current object exists in dump; dump is authoritative, not the historical CREATE text.",
+      "selected_file": null
+    },
+    {
+      "id": "Q107",
+      "message": "M38",
+      "message_id": "msg_02f491edd9a20d5c016ad75af26ec887d09b9bef2b38376ff7",
+      "turn_id": "01a1593a-b36c-7b53-9f36-ecf52ac27bd0",
+      "date": "2026-10-20 20:13:01 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "fe28ffad53bceeecdd405b8cf8d2ff78e04f8cba37f7924c93692c2142a5402e",
+      "status": "Repeated or supporting historical query; retained in private original archive.",
+      "selected_file": null
+    },
+    {
+      "id": "Q108",
+      "message": "M39",
+      "message_id": "msg_02f491edd9a20d5c016ad75b543c0087d0bf5c93c5daa14dcb",
+      "turn_id": "01a1593c-9983-7810-acdf-996aa502287f",
+      "date": "2026-10-20 20:15:06 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "bd211e92ac2cdadf1e50253d85a428a76425dfd58ed9b23d684a7a485c7365f7",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q109",
+      "message": "M39",
+      "message_id": "msg_02f491edd9a20d5c016ad75b543c0087d0bf5c93c5daa14dcb",
+      "turn_id": "01a1593c-9983-7810-acdf-996aa502287f",
+      "date": "2026-10-20 20:15:06 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "036f1c192dc40874e824dbff21fd8d365a13258a7fdc4a7276b87929993ed984",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q110",
+      "message": "M40",
+      "message_id": "msg_02f491edd9a20d5c016ad75bc0207c87d0aaf9f66e8ba83c23",
+      "turn_id": "01a1593e-0dcb-7bd1-9867-25bc576f29fd",
+      "date": "2026-10-20 20:16:41 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "f3fc4832ddeb7469870a6a9c396bb54c78fb7410780a00c87f35305293773d45",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "validation/recovered_checks.sql"
+    },
+    {
+      "id": "Q111",
+      "message": "M41",
+      "message_id": "msg_02f491edd9a20d5c016ad75c4537a887d099de45f89f64f033",
+      "turn_id": "01a1593f-a6fe-7063-9aed-19bd12567504",
+      "date": "2026-10-20 20:18:26 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "2c977e306825ec76baaf54f647ffe9f4690e99e583baa500dd995a28818a732f",
+      "status": "Administrative proposal/diagnostic; not evidence of configured access.",
+      "selected_file": null
+    },
+    {
+      "id": "Q112",
+      "message": "M41",
+      "message_id": "msg_02f491edd9a20d5c016ad75c4537a887d099de45f89f64f033",
+      "turn_id": "01a1593f-a6fe-7063-9aed-19bd12567504",
+      "date": "2026-10-20 20:18:26 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "63b0dd45db6bdfae274c520e2e654dca48cece4481cb6d8297ccd952dfdb3709",
+      "status": "Administrative proposal/diagnostic; not evidence of configured access.",
+      "selected_file": null
+    },
+    {
+      "id": "Q113",
+      "message": "M41",
+      "message_id": "msg_02f491edd9a20d5c016ad75c4537a887d099de45f89f64f033",
+      "turn_id": "01a1593f-a6fe-7063-9aed-19bd12567504",
+      "date": "2026-10-20 20:18:26 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "44c8b98286322286283d1c9a6a0d309cc1324351ce175ae6713e9129541f6e33",
+      "status": "Administrative proposal/diagnostic; not evidence of configured access.",
+      "selected_file": null
+    },
+    {
+      "id": "Q114",
+      "message": "M42",
+      "message_id": "msg_02f491edd9a20d5c016ad8acf0387c87d09427c67352fd1d66",
+      "turn_id": "01a15e63-0817-7391-b264-eee3659b55f1",
+      "date": "2026-10-21 20:15:10 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "977881c7c46389d874ed6b7e5008a4ccdc0345d97168a38e17d2f92eb50e3b24",
+      "status": "Administrative proposal/diagnostic; not evidence of configured access.",
+      "selected_file": null
+    },
+    {
+      "id": "Q115",
+      "message": "M42",
+      "message_id": "msg_02f491edd9a20d5c016ad8acf0387c87d09427c67352fd1d66",
+      "turn_id": "01a15e63-0817-7391-b264-eee3659b55f1",
+      "date": "2026-10-21 20:15:10 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "c4ab4debf4e322e1aa35e45f5723d817a5d58f5b2a51e93e5e7cbfd42351260b",
+      "status": "Administrative proposal/diagnostic; not evidence of configured access.",
+      "selected_file": null
+    },
+    {
+      "id": "Q116",
+      "message": "M42",
+      "message_id": "msg_02f491edd9a20d5c016ad8acf0387c87d09427c67352fd1d66",
+      "turn_id": "01a15e63-0817-7391-b264-eee3659b55f1",
+      "date": "2026-10-21 20:15:10 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "5656ec9f9833894c3d8f5c298c498c2ac9a16d8fe9f5aa0a64403845e0202e05",
+      "status": "Administrative proposal/diagnostic; not evidence of configured access.",
+      "selected_file": null
+    },
+    {
+      "id": "Q117",
+      "message": "M42",
+      "message_id": "msg_02f491edd9a20d5c016ad8acf0387c87d09427c67352fd1d66",
+      "turn_id": "01a15e63-0817-7391-b264-eee3659b55f1",
+      "date": "2026-10-21 20:15:10 +08:00",
+      "block": 4,
+      "sql_sha256_lf_utf8": "8317bed043ce914ef8f0ae0403d2a6fff05e57dea41085b93e26f5e9faab560a",
+      "status": "Administrative proposal/diagnostic; not evidence of configured access.",
+      "selected_file": null
+    },
+    {
+      "id": "Q118",
+      "message": "M43",
+      "message_id": "msg_02f491edd9a20d5c016ad8ad603c3c87d0826260bef932d100",
+      "turn_id": "01a15e64-d764-76a0-a871-a93a418608c7",
+      "date": "2026-10-21 20:17:09 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "f52b2a42cef581286579cd7f6d72347509f58494cbaa7e7321b0b285995f89ad",
+      "status": "Administrative proposal/diagnostic; not evidence of configured access.",
+      "selected_file": null
+    },
+    {
+      "id": "Q119",
+      "message": "M43",
+      "message_id": "msg_02f491edd9a20d5c016ad8ad603c3c87d0826260bef932d100",
+      "turn_id": "01a15e64-d764-76a0-a871-a93a418608c7",
+      "date": "2026-10-21 20:17:09 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "3ef1663201e6cf96c5eb8ffc243cd98f543cded1c93ff3b89be5b7522beb4945",
+      "status": "Administrative proposal/diagnostic; not evidence of configured access.",
+      "selected_file": null
+    },
+    {
+      "id": "Q120",
+      "message": "M44",
+      "message_id": "msg_02f491edd9a20d5c016aded46b28b887d08db2c997fbea6e5c",
+      "turn_id": "01a1766d-00f5-71e0-a49f-4b224217888e",
+      "date": "2026-10-26 12:16:57 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "cc61db3714fbed94a4ac39aa8ca3813e70f541fd902912935fd271b1a73c5e64",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "exports/reporting_exports.sql"
+    },
+    {
+      "id": "Q121",
+      "message": "M45",
+      "message_id": "msg_02f491edd9a20d5c016adededc207087d080f9bad7f28c7f5b",
+      "turn_id": "01a17694-1ebb-7fe2-9011-5402fdb6d1cf",
+      "date": "2026-10-26 12:59:41 +08:00",
+      "block": 1,
+      "sql_sha256_lf_utf8": "fe1b4583c880e628b2542fa16351db40085b4ea653cbf09a951943305e67b807",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "exports/reporting_exports.sql"
+    },
+    {
+      "id": "Q122",
+      "message": "M45",
+      "message_id": "msg_02f491edd9a20d5c016adededc207087d080f9bad7f28c7f5b",
+      "turn_id": "01a17694-1ebb-7fe2-9011-5402fdb6d1cf",
+      "date": "2026-10-26 12:59:41 +08:00",
+      "block": 2,
+      "sql_sha256_lf_utf8": "3387c6492ba7bc8e7be332ca37061cdddec4374378774ab401666769c74e91b9",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "exports/reporting_exports.sql"
+    },
+    {
+      "id": "Q123",
+      "message": "M45",
+      "message_id": "msg_02f491edd9a20d5c016adededc207087d080f9bad7f28c7f5b",
+      "turn_id": "01a17694-1ebb-7fe2-9011-5402fdb6d1cf",
+      "date": "2026-10-26 12:59:41 +08:00",
+      "block": 3,
+      "sql_sha256_lf_utf8": "01fde1b17065cfd3d81c03724f1eea84ebde12a90133bcbf3d6e4f7233993d2a",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "exports/reporting_exports.sql"
+    },
+    {
+      "id": "Q124",
+      "message": "M45",
+      "message_id": "msg_02f491edd9a20d5c016adededc207087d080f9bad7f28c7f5b",
+      "turn_id": "01a17694-1ebb-7fe2-9011-5402fdb6d1cf",
+      "date": "2026-10-26 12:59:41 +08:00",
+      "block": 4,
+      "sql_sha256_lf_utf8": "fe28ffad53bceeecdd405b8cf8d2ff78e04f8cba37f7924c93692c2142a5402e",
+      "status": "Selected recovered SQL; historical execution unverified.",
+      "selected_file": "exports/reporting_exports.sql"
+    }
+  ]
+}
